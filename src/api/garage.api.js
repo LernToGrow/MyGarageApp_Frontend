@@ -2,7 +2,7 @@ import axios from 'axios';
 import garageClient from './garageClient';
 
 // Plain instance with no redirect interceptor — safe for login calls
-const baseClient = axios.create({ baseURL: '/api' });
+const baseClient = axios.create({ baseURL: import.meta.env.VITE_API_URL ?? '/api' });
 
 export const garageApi = {
   login: (phone, password) =>
