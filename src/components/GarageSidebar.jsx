@@ -33,22 +33,9 @@ export default function GarageSidebar() {
 
   return (
     <aside className="w-56 min-h-screen flex flex-col" style={{ background: '#1a1a1a' }}>
-      {/* Header */}
+      {/* Logo */}
       <div className="px-4 py-5 border-b border-white/10">
-        <div className="flex items-center gap-2 mb-1">
-          <div
-            className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
-            style={{ background: '#E85D04' }}
-          >
-            {user?.name?.[0]?.toUpperCase() ?? 'G'}
-          </div>
-          <div className="min-w-0">
-            <div className="text-white font-semibold text-sm leading-tight truncate">
-              {user?.name ?? 'Garage Owner'}
-            </div>
-            <div className="text-white/40 text-xs">{t('roles.garage_owner')}</div>
-          </div>
-        </div>
+        <img src="/logo-white.png" alt="GarageMalik" className="h-10 w-auto" />
       </div>
 
       {/* Nav */}

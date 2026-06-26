@@ -49,15 +49,8 @@ export default function LoginPage() {
           <div className="px-8 pt-8 pb-8">
             {/* Logo */}
             <div className="flex flex-col items-center mb-8">
-              <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 shadow-lg"
-                style={{ background: 'linear-gradient(135deg, #E85D04, #f97316)' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 21V12h6v9" />
-                </svg>
-              </div>
-              <h1 className="text-xl font-bold text-slate-900 tracking-tight">GarageApp Admin</h1>
+              <img src="/logo.png" alt="GarageMalik" className="h-10 mb-3" />
+              <h1 className="text-xl font-bold text-slate-900 tracking-tight">GarageMalik Admin</h1>
               <p className="text-slate-400 text-sm mt-1">Super admin access only</p>
             </div>
 

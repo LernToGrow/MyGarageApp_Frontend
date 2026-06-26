@@ -51,9 +51,26 @@ function GarageOwnerLayout() {
   return (
     <div className="flex min-h-screen">
       <GarageSidebar />
-      <main className="flex-1 overflow-auto">
-        <Outlet />
-      </main>
+      <div className="flex-1 flex flex-col overflow-hidden">
+        {/* Top navbar */}
+        <header className="h-14 flex items-center justify-end px-6 border-b border-gray-200 bg-white shrink-0">
+          <div className="flex items-center gap-2.5">
+            <div
+              className="w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+              style={{ background: '#E85D04' }}
+            >
+              {user?.name?.[0]?.toUpperCase() ?? 'G'}
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-gray-900 leading-tight">{user?.name ?? 'Garage Owner'}</div>
+              <div className="text-xs text-gray-400">Garage Owner</div>
+            </div>
+          </div>
+        </header>
+        <main className="flex-1 overflow-auto">
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 }

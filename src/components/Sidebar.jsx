@@ -82,19 +82,8 @@ export default function Sidebar() {
     <aside className="w-60 flex flex-col min-h-screen" style={{ background: 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)' }}>
       {/* Brand */}
       <div className="px-5 py-5 border-b border-slate-700/60">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E85D04, #f97316)' }}>
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18" />
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 21V12h6v9" />
-            </svg>
-          </div>
-          <div>
-            <div className="font-bold text-white text-sm leading-tight">GarageApp</div>
-            <div className="text-xs text-slate-400 leading-tight">Super Admin</div>
-          </div>
-        </div>
+        <img src="/logo-white.png" alt="GarageMalik" className="h-10 w-auto" />
+        <div className="text-xs text-slate-400 mt-1.5 px-0.5">Super Admin</div>
       </div>
 
       {/* Nav */}

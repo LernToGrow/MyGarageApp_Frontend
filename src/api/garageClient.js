@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const garageClient = axios.create({
-  baseURL: '/api',
+  baseURL: import.meta.env.VITE_API_URL ?? '/api',
 });
 
 garageClient.interceptors.request.use(config => {
